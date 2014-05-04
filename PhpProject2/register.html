@@ -1,0 +1,49 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+           
+           
+             function check() {    
+                 var a=parseInt(document.getElementById("pass").value);
+                 var b=parseInt(document.getElementById("passv").value);
+                if(a==b)
+                    {
+                        document.getElementById("demo").innerHTML="REGISTRATION SUCCESSFUL";
+                        
+                    }
+                    else
+                        {
+                          document.getElementById("demo").innerHTML="REGISTRATION UNSUCCESSFUL,TRY AGAIN!!";
+                         location.reload();
+                        }
+            }
+        </script>
+    </head>
+    <body>
+         <div id="d1"><h2>&nbsp;&nbsp;Student Feedback System</h2> <marquee behavior="scroll" direction="right" scrollamount="4"><font style="color:#FFFFFF ; font-size: 12pt;">We really value your feedback!!</marquee> </div>
+        <img src="image1.jpg" height="%14" width="10%" align="left"> <br> 
+        
+        <br>
+        Enter your Username&nbsp;<input type="text" name="user"><br> <br> 
+        Enter your Password&nbsp;&nbsp;<input type="password" id="pass" name="pass"><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Verify your Password&nbsp;&nbsp;<input type="password" id="passv" name="passv"><br><br>
+         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <button onclick="check()">REGISTER</button> &nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="ome.html">BACK</a>
+        <p id="demo"></p>
+        <br><br>
+         
+         <br><br><br><br><br><br><br><br><br><br>
+          <center> <span style="font-family:verdana;font-color:#666666; font-size:70%;">©2014-2019</span> <span style="font-family:verdana;font-color:#666666; font-size:50%;">Trademarks are the property of their respective owners. All Rights Reserved.</span></center>
+         
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    </head>
+<body>
+
+<form name="input" action="html_form_action.asp" method="get">
+<input type="radio" name="Q1" value="A1">A1<br>
+<input type="radio" name="Q1" value="A2">A2<br>
+<input type="radio" name="Q1" value="A3">A3<br>
+<input type="radio" name="Q1" value="A4">A4<br><br>
+<input type="radio" name="Q2" value="A1">A1<br>
+<input type="radio" name="Q2" value="A2">A2<br>
+<input type="radio" name="Q2" value="A3">A3<br>
+<input type="radio" name="Q2" value="A4">A4<br><br>
+<input type="radio" name="Q3" value="A1">A1<br>
+<input type="radio" name="Q3" value="A2">A2<br>
+<input type="radio" name="Q3" value="A3">A3<br>
+<input type="radio" name="Q3" value="A4">A4<br><br>
+<input type="radio" name="Q4" value="A1">A1<br>
+<input type="radio" name="Q4" value="A2">A2<br>
+<input type="radio" name="Q4" value="A3">A3<br>
+<input type="radio" name="Q4" value="A4">A4<br><br>
+<input type="radio" name="Q5" value="A1">A1<br>
+<input type="radio" name="Q5" value="A2">A2<br>
+<input type="radio" name="Q5" value="A3">A3<br>
+<input type="radio" name="Q5" value="A4">A4<br><br>
+<input type="radio" name="Q6" value="A1">A1<br>
+<input type="radio" name="Q6" value="A2">A2<br>
+<input type="radio" name="Q6" value="A3">A3<br>
+<input type="radio" name="Q6" value="A4">A4<br><br>
+<input type="radio" name="Q7" value="A1">A1<br>
+<input type="radio" name="Q7" value="A2">A2<br>
+<input type="radio" name="Q7" value="A3">A3<br>
+<input type="radio" name="Q7" value="A4">A4<br><br>
+<input type="radio" name="Q8" value="A1">A1<br>
+<input type="radio" name="Q8" value="A2">A2<br>
+<input type="radio" name="Q8" value="A3">A3<br>
+<input type="radio" name="Q8" value="A4">A4<br><br>
+<input type="radio" name="Q9" value="A1">A1<br>
+<input type="radio" name="Q9" value="A2">A2<br>
+<input type="radio" name="Q9" value="A3">A3<br>
+<input type="radio" name="Q9" value="A4">A4<br><br>
+<input type="radio" name="Q10" value="A1">A1<br>
+<input type="radio" name="Q10" value="A2">A2<br>
+<input type="radio" name="Q10" value="A3">A3<br>
+<input type="radio" name="Q10" value="A4">A4<br><br>
+<script>
+
+
+function checkTest() {
+    var count = 0;
+
+    if ($('input[type="radio"][name=Q1]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q2]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q3]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q4]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q5]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q6]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q7]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q8]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q9]:checked').val() == "A1") {
+        count++;
+    }
+    if ($('input[type="radio"][name=Q10]:checked').val() == "A1") {
+        count++;
+    }
+    if (count > 6) {
+        alert("Congratulations! You Passed!");
+    } else {
+        alert("You answered too many questions incorrectly. Try again.");
+    }
+}
+</script>
+<button type="button" onclick="checkTest()">Submit Test!</button>
+</form>
